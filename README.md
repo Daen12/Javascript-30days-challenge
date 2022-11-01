@@ -14,3 +14,10 @@
   * We can use'Array.from()' or '[...Array]'
 - To find if an item includes certain strings, we use 'includes()'
 - Still not sure why aLast - bLast doesn't work and aLast>bLast? 1:-1 works.
+
+##Day 5:
+- recapped some declarations in css
+- 'transition' allows panel to animate itself according to the items defined in it.
+- flex item can be a flex container at the same time. This results in netted flex
+- Javascript part was basic 'addEventListener' function. However 'if'was used to scan for certain propertyName before toggling a class name which I still don't understand why.
+- Toggle removes a class when it exists, and adds a class when it does not exist.
