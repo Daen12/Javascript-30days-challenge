@@ -21,3 +21,9 @@
 - flex item can be a flex container at the same time. This results in netted flex
 - Javascript part was basic 'addEventListener' function. However 'if'was used to scan for certain propertyName before toggling a class name which I still don't understand why.
 - Toggle removes a class when it exists, and adds a class when it does not exist.
+
+##Day 6:
+- learned how to use 'match' with RegExp and how to use it inside a function. Match returns all the matching bundles inside an array.
+ => https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/match
+- Event listener 'change' only fires when we go off that input(for example, click outside of searchbox) but 'Keyup' listens for added keys(typing the keyboard). The latter is more practical for recommending sth on a searchbox.
+- Trying to figure out how 'this.value' works in this example.
