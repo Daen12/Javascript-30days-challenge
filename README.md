@@ -27,3 +27,6 @@
  => https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/match
 - Event listener 'change' only fires when we go off that input(for example, click outside of searchbox) but 'Keyup' listens for added keys(typing the keyboard). The latter is more practical for recommending sth on a searchbox.
 - Trying to figure out how 'this.value' works in this example.
+
+##Day 7:
+- Learned some useful methods such as some(), every(), and find(), findIndex().
