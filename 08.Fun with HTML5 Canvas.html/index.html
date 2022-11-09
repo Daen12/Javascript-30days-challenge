@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>HTML5 Canvas</title>
+</head>
+<body>
+<canvas id="draw" width="800" height="800"></canvas>
+<script>
+    const canvas = document.querySelector('#draw');
+    //canvas on html is like getting a block of actual pixels and draw on that. They don't directly draw on the canvas element called context. Context can be either 2D(what we do today) or 3D(video games)
+    const ctx = canvas.getContext('2d');
+    canvas.width = window.innerWidth;
+    canvas.height = window.innerHeight;
+    //resize our canvas
+    ctx.strokeStyle = '#BADA55';
+    ctx.lineJoin = 'round';
+    ctx.lineCap = 'round';
+    ctx.lineWidth = 100;
+    ctx.globalCompositeOperation = 'multiply'; //search for cool operations in mdn!
+
+    let isDrawing = false;
+    //Only draws when I click on the mouse. First set isDrawing to false and when I click down this turns true, when I don't click it returns to false.
+    let lastX = 0;
+    let lastY = 0; 
+    //sets the starting point of the drawing.
+    let hue = 0; //set the hue to zero and handle this at function draw.
+    let direction = 0; //when the hue reaches 360, the line turns narrower and resizes itself.
+
+    function draw(e){
+        if(!isDrawing) return; //stop the function from runnning when not moused down.
+        console.log(e);
+        ctx.strokeStyle = `hsl(${hue}, 100%, 50%)`;
+        ctx.beginPath(); //Start from
+        ctx.moveTo(lastX, lastY); //go to
+        ctx.lineTo(e.offsetX, e.offSetY);
+        ctx.stroke();
+        [lastX, lastY] = [e.offsetX, e.offsetY];
+        hue++;
+        if(hue >= 360){
+            hue = 0;
+        }
+        if (ctx.lineWidth >= 100 || ctx.lineWidth <= 1){
+            direction = !direction;
+        }
+        if (direction){
+            ctx.lineWidth++;// if linewidth is smaller than 1, direction is upwards. size increases.
+        } else{
+            ctx.lineWidth--; //if linewidth is bigger than 100, direction changes and shrinks the size
+        }
+    };
+
+    canvas.addEventListener('mousedown',(e)=> {
+        isDrawing = true;
+        [lastX, lastY] = [e.offsetX, e.offsetY];
+
+    }); //before 'mousemove', we update the lastX and lastY.
+    canvas.addEventListener('mousemove', draw);
+    canvas.addEventListener('mouseup', ()=> isDrawing = false);
+    canvas.addEventListener('mouseout', ()=> isDrawing = false);//if you click in the canvas, let your mouse leave, let go and then let your mouse in, it's still going to think that you have your mouse clicked.
+
+
+</script>
+
+<style>
+  html, body {
+    margin: 0;
+  }
+</style>
+
+</body>
+</html>
