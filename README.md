@@ -30,3 +30,10 @@
 
 ##Day 7:
 - Learned some useful methods such as some(), every(), and find(), findIndex().
+
+##Day 8 :
+- Used HTMLcanvaselement to implement drawing function. 
+- getContext('2d') leads to the creation of a CanvasRenderingContext2D object representing a two-dimensional rendering context.
+- global composite operation sets the type of compositing operation to apply when drawing new shapes.
+- Learned how to use 'if'statement and variable representing 0 to gradually increase or reduce the size of our brush.
+- learned that the order of event listeners is important since javascript runs in order from the top.
