@@ -37,3 +37,11 @@
 - global composite operation sets the type of compositing operation to apply when drawing new shapes.
 - Learned how to use 'if'statement and variable representing 0 to gradually increase or reduce the size of our brush.
 - learned that the order of event listeners is important since javascript runs in order from the top.
+
+##Day 9 : 
+- learned some dev tools to use on javascript console.
+- styled : console.log('%c text text', 'font-size:50px; background:pink;')
+- console.warn, console.error, console.info, console.dir, console.clear, console.table, console.count
+- console.assert(input statement, 'text that will show if this statement is wrong')
+- When grouping the end result by keys(columns), we use console.group/groupCollapsed(`${dog.name}`)/console.groupEnd(`${dog.name}`)
+
