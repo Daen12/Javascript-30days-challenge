@@ -45,3 +45,8 @@
 - console.assert(input statement, 'text that will show if this statement is wrong')
 - When grouping the end result by keys(columns), we use console.group/groupCollapsed(`${dog.name}`)/console.groupEnd(`${dog.name}`)
 
+##Day 10 : 
+- Learned how to make flag variables to set the direction, and change the outcome of 'if' statement as we intend.
+- learned one of the event can derive whether 'shiftkey' action was made, (console.log(e.shiftkey))
+- Still not sure where 'checked' is from in the js line (this.checked)
+
