@@ -50,3 +50,8 @@
 - learned one of the event can derive whether 'shiftkey' action was made, (console.log(e.shiftkey))
 - Still not sure where 'checked' is from in the js line (this.checked)
 
+##Day 12 : 
+- Used some simple js methods & 'keyup' eventlistener to implement action when certain keys were pushed.
+- Used 'splice' to keep the length of an array fixed. (ex. pressed.splice(-secretCode.length-1, pressed.length - secretCode.length)
+- Summary of today's session : 1. Push the key into an empty array using e.key, 2. keep the length of arrays fixed 3. When the keys entered in a row are identical to our secret code, turn on the action (cornify_add)
+
