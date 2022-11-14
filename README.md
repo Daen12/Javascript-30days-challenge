@@ -50,6 +50,12 @@
 - learned one of the event can derive whether 'shiftkey' action was made, (console.log(e.shiftkey))
 - Still not sure where 'checked' is from in the js line (this.checked)
 
+##Day 11 :
+- Learned how to implement hover effect on css.
+- Selected DOM elements, built functions, and merged them on addEventListeners.
+- Built many single functions and learned how they interact to yield intended consequences.
+- Learned basic statement that acts as 'if' statement. Not fully getting it tho...
+
 ##Day 12 : 
 - Used some simple js methods & 'keyup' eventlistener to implement action when certain keys were pushed.
 - Used 'splice' to keep the length of an array fixed. (ex. pressed.splice(-secretCode.length-1, pressed.length - secretCode.length)
