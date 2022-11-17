@@ -61,3 +61,10 @@
 - Used 'splice' to keep the length of an array fixed. (ex. pressed.splice(-secretCode.length-1, pressed.length - secretCode.length)
 - Summary of today's session : 1. Push the key into an empty array using e.key, 2. keep the length of arrays fixed 3. When the keys entered in a row are identical to our secret code, turn on the action (cornify_add)
 
+##Day 13 :
+- added eventlistener on entire window, and listened for 'scroll'.
+- The problem with scroll is when we console.log event on the created function, it logs too many scroll events.
+- we use 'debounce' to adjust for the number of(or the time interval of) events logged.
+- Selected all DOM images and turned them into a variable. forEach, we calculated the 'image half shown state', and 'image scrolled down state'
+- When the images are half shown and not scrolled past, simply add 'active' class to the classlist of image.
+- 'active' class consists of css elements to basically turn the status of translateX and scale & opacity to default state in order to show them as they were.
