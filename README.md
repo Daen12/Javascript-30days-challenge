@@ -68,3 +68,10 @@
 - Selected all DOM images and turned them into a variable. forEach, we calculated the 'image half shown state', and 'image scrolled down state'
 - When the images are half shown and not scrolled past, simply add 'active' class to the classlist of image.
 - 'active' class consists of css elements to basically turn the status of translateX and scale & opacity to default state in order to show them as they were.
+
+##Day 14 :
+- Learned that primitive values can be copied and changed without reference being changed, whereas Array and object cannot.
+- Learned ways to copy the references with array : spread, slice, [].concat()
+- Ways to copy an object : spread, Object.assign({}, objectname, changed element) -> but only one level deep elements can be changed
+- Way to copy and change deeper levels of an object : JSON.parse(JSON.stringify()) -> Not recommended?
+
